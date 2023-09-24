@@ -1,8 +1,4 @@
-//public class Shoppingcart {
-//    Products product = new Products();
-//
-//
-//}
+import java.sql.SQLOutput;
 
 public class Shoppingcart
 {
@@ -15,10 +11,9 @@ public class Shoppingcart
         cart = new Products[capacity];
         itemCount = 0;
     }
-    public void addItem(Products item)
-    {
+    public void addItem(Products item) {
         cart[itemCount] = item;
-        itemCount++;
+        itemCount ++;
     }
 
     public void removeItem(Products item)
@@ -28,8 +23,11 @@ public class Shoppingcart
     }
 
     public void display()
-    {
-        for (int i = 0; i < itemCount; i++)
-            System.out.println(cart[i].get_name());
+    {   int i;
+        for ( i = 0; i < itemCount; i++)
+
+
+            System.out.println("Product Name: "  + cart[i].get_name() + "  Weight: " + cart[i].getWeight() + "  Price:  " + cart[i].getPrice());
+
     }
 }

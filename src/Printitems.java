@@ -1,17 +1,19 @@
 public class Printitems {
     public static void main (String [] args)
     {
-        Shoppingcart obj = new Shoppingcart(2);
-        Products item = new Products("Milk");
-        Products item2 = new Products("Bread");
-        Products item3 = new Products("Butter");
+        Shoppingcart obj = new Shoppingcart( 214748364);
+        Products item = new Products("Milk", "1L", "670 AMD");
+        Products item2 = new Products("Bread", "200g", "200AMD");
+        Products item3 = new Products("Butter", "100g", "80000AMD");
+        Products item4 = new Products("Wine", "1L", "40000");
 
-//        System.out.println(item.get_name());
+
+
         obj.addItem(item);
         obj.removeItem(item);
         obj.addItem(item2);
         obj.addItem(item3);
-//        obj.addItem(item);
+        obj.addItem(item4);
         obj.display();
     }
 }
