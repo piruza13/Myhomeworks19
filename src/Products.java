@@ -1,19 +1,19 @@
 
 public class Products
 {
-    private String _name;
+    private String name;
     private String weight;
     private String price;
 
     public Products(String item_name, String weight,String price)
     {
-        this._name = item_name;
+        this.name = item_name;
         this.weight = weight;
         this.price = price;
     }
     public String get_name()
     {
-        return _name;
+        return name;
     }
     public String getWeight() {return weight;
     }
