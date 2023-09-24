@@ -5,7 +5,7 @@ public class Printitems {
         Products item = new Products("Milk", "1L", "670 AMD");
         Products item2 = new Products("Bread", "200g", "200AMD");
         Products item3 = new Products("Butter", "100g", "80000AMD");
-        Products item4 = new Products("Wine", "1L", "40000");
+        Products item4 = new Products("Wine", "1L", "40000AMD");
 
 
 
