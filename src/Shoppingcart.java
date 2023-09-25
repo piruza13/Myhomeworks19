@@ -23,10 +23,6 @@ public class Shoppingcart
     }
 
 
-
-
-
-
     public void removeItem(Products item)
     {
         cart[itemCount] = null;
