@@ -11,9 +11,21 @@ public class Shoppingcart
         itemCount = 0;
     }
     public void addItem(Products item) {
-        cart[itemCount] = item;
-        itemCount ++;
+        if (itemCount > cart.length - 1)
+        {
+            System.out.println("The shopping cart is full.");
+
+        }
+        else {
+            cart[itemCount] = item;
+            itemCount++;
+        }
     }
+
+
+
+
+
 
     public void removeItem(Products item)
     {
