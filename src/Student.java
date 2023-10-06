@@ -1,7 +1,7 @@
     public class Student {
-        String name;
-        int rollNumber;
-        static String universityName;
+        private String name;
+        private int rollNumber;
+        private static String universityName;
 
         public Student (int rollNumber, String name, String universityName) {
             this.rollNumber = rollNumber;
